@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOX ICONS -->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/style/styles_student.css">
+    <title>Estado de Solicitudes - Préstamos UNPHU</title>
+</head>
+<body>
+    <div class="menu-dashboard">
+        <!-- TOP MENU -->
+        <div class="top-menu">
+            <div class="logo">
+                <img src="../img/logo.png" alt="UNPHU">
+                <span>UNPHU</span>
+            </div>
+            <div class="toggle"></div>
+        </div>
+        <!-- MENU -->
+        <div class="menu">
+            <div class="enlace" data-vista="inicio">
+                <i class="bx bx-home"></i>
+                    <span>Inicio</span>
+            </div>
+        
+            <div class="enlace" data-vista="solicitudes">
+                        <i class="bx bx-list-check"></i>
+                        <span>Estado de Solicitudes</span>
+            </div>
+        
+            <div class="enlace" data-vista="materiales">
+                        <i class="bx bx-folder"></i>
+                        <span>Gestion de Materiales</span>
+            </div>
+        
+            <div class="enlace cerrar-sesion">
+                <i class="bx bx-log-out"></i>
+                    <span>Cerrar Sesión</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <nav class="navbar">
+            <h2>Estado de Solicitudes</h2>
+        </nav>
+        <section class="dashboard-content">
+            <div class="info-box">
+                <h3>Mis Solicitudes</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Fecha de Solicitud</th>
+                            <th>Fecha de Devolución</th>
+                            <th>Estado</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-solicitudes">
+                        <tr>
+                            <td>Libro 1</td>
+                            <td>2025-02-20</td>
+                            <td>2025-03-01</td>
+                            <td class="pendiente">Pendiente</td>
+                            <td><button class="btn-unphu cancelar-btn">Cancelar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Libro 2</td>
+                            <td>2025-02-18</td>
+                            <td>2025-02-28</td>
+                            <td class="aprobado">Aprobado</td>
+                            <td><button class="btn-unphu" disabled>✓</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    
+    <script src="/script/student.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

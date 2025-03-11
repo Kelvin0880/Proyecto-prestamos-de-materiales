@@ -1,0 +1,395 @@
+/* Fondo general */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+}
+
+/* Contenedor de login */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #006937;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    transition: all 0.3s;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #28a745;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    padding: 15px;
+}
+
+.sidebar-nav a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-nav a i {
+    margin-right: 10px;
+}
+
+/*este no ,,moodifica ni admin ni index. 
+/* Ajuste para que el contenido principal no se solape 
+.container-fluid {
+    margin-left: 250px;
+}
+*/
+
+/* Contenido principal */
+.main {
+    margin-left: 250px;
+    width: 100%;
+    transition: margin-left 0.3s;
+}
+
+/*
+.sidebar.collapsed + .main {
+    margin-left: 60px;
+}*/
+
+/* Avatar en la barra superior */
+.avatar {
+    width: 40px;
+    height: 40px;
+}
+
+/* 
+#page-content {
+    margin-left: 260px;
+    padding: 20px;
+}*/
+
+    /* Logo */
+.logo {
+    width: 100px;
+}
+
+/* Color oficial UNPHU */
+.text-primary-unphu {
+    color: #006937;
+}
+
+/* Botón con el color de la UNPHU */
+.btn-unphu {
+    background-color: #006937;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-unphu:hover {
+    background-color: #00582f;
+}
+
+/* Fondo de la barra de navegación */
+.bg-unphu {
+    background-color: #006937;
+}
+
+/* Títulos con color UNPHU */
+.text-primary-unphu {
+    color: #006937;
+}
+
+/* FONTS GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* VARIABLES */
+:root {
+    --blanco: #FFFFFF;
+    --verde-principal: #006937;
+    --verde-oscuro: #004d26;
+    --gris-claro: #f5f5f5;
+}
+
+/* GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--gris-claro);
+    color: #333;
+    display: flex;
+}
+
+/* MENU LATERAL */
+.menu-dashboard {
+    max-width: 80px;
+    height: 100vh;
+    background: var(--verde-principal);
+    padding: 20px;
+    transition: max-width .3s ease;
+    color: var(--blanco);
+}
+
+.menu-dashboard.open {
+    max-width: 250px;
+}
+
+/* LOGO */
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    transition: width .3s ease;
+}
+
+.logo span {
+    font-size: 20px;
+    margin-left: 20px;
+    display: none;
+}
+
+.menu-dashboard.open .logo span {
+    display: block;
+}
+
+/* BOTÓN MENU */
+.toggle {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* BARRA DE BÚSQUEDA */
+.input-search {
+    width: 100%;
+    margin: 30px 0;
+    background-color: var(--verde-oscuro);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.input-search i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.input-search .input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    color: var(--blanco);
+    font-size: 18px;
+    display: none;
+}
+
+.menu-dashboard.open .input-search .input {
+    display: block;
+}
+
+.menu-dashboard:hover {
+    max-width: 250px;
+}
+
+.menu-dashboard:hover .menu .enlace span {
+    opacity: 1;
+}
+
+
+/* ENLACES DEL MENÚ */
+.menu .enlace {
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all .3s ease;
+}
+
+.menu .enlace:hover {
+    background: var(--verde-oscuro);
+}
+
+.menu .enlace i {
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+.menu .enlace span {
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.menu-dashboard.open .menu .enlace span {
+    opacity: 1;
+}
+
+/* CONTENIDO PRINCIPAL */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--blanco);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ESTILOS GENERALES DEL CONTENIDO */
+.content {
+    margin-top: 20px;
+    background: var(--blanco);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.table {
+    background: white;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.btn-unphu {
+    background-color: #006937;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-unphu:hover {
+    background-color: #00582f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Botones generales 
+.btn-primary {
+    background-color: #006937;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #00582f;
+}*/
+
+/* Barra de navegación personalizada 
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #006937;
+}
+*/
+/* Tabla 
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-bordered {
+    border: 2px solid #006937;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #006937;
+}
+*/
+/* Botones dentro de tablas 
+.table .btn-success, .table .btn-danger {
+    border-radius: 5px;
+}
+
+.table .btn-success {
+    background-color: #28a745;
+}
+
+.table .btn-danger {
+    background-color: #dc3545;
+}
+
+.table .btn-success:hover {
+    background-color: #218838;
+}
+
+.table .btn-danger:hover {
+    background-color: #c82333;
+}
+
+*/

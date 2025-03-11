@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiante - Préstamos UNPHU</title>
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/style/styles_student.css">
+    <!-- CUSTOM JS -->
+    <script src="/script/student.js" defer></script> 
+    <link rel="imagen" href="./img/logo.png">
+</head>
+<body>
+
+    <div class="menu-dashboard">
+        <!-- TOP MENU -->
+        <div class="top-menu">
+            <div class="logo">
+                <img src="../img/logo.png" alt="UNPHU">
+                <span>UNPHU</span>
+            </div>
+            <div class="toggle">
+            </div>
+        </div>
+
+        <!-- INPUT SEARCH 
+        <div class="input-search">
+            <i class='bx bx-search'></i>
+            <input type="text" class="input" placeholder="Buscar Material">
+        </div>-->
+
+        <!-- MENU -->
+        <div class="menu">
+            <div class="enlace" data-vista="inicio">
+                <i class="bx bx-home"></i>
+                    <span>Inicio</span>
+            </div>
+        
+            <div class="enlace" data-vista="solicitudes">
+                        <i class="bx bx-list-check"></i>
+                        <span>Estado de Solicitudes</span>
+            </div>
+        
+            <div class="enlace" data-vista="materiales">
+                        <i class="bx bx-folder"></i>
+                        <span>Gestion de Materiales</span>
+            </div>
+        
+            <div class="enlace cerrar-sesion">
+                <i class="bx bx-log-out"></i>
+                    <span>Cerrar Sesión</span>
+            </div>
+        </div>
+    </div>
+
+<!-- Contenido principal -->
+<div class="main-content">
+    <nav class="navbar">
+        <h2>Bienvenido, Estudiante</h2>
+    </nav>
+
+    <!-- Sección principal con resumen -->
+    <section class="dashboard-content">
+        <div class="overview">
+            <div class="welcome-box">
+                <h3>📚 Bienvenido al Sistema de Préstamos</h3>
+                <p>Aquí puedes solicitar materiales audiovisuales y tecnológicos de la UNPHU.</p>
+            </div>
+
+            <div class="quick-actions">
+                <button class="btn btn-primary"><i class="bx bx-cart"></i> Solicitar Préstamo</button>
+                <button class="btn btn-secondary"><i class="bx bx-folder"></i> Ver Materiales</button>
+            </div>
+        </div>
+
+        <!-- Tarjetas informativas -->
+        <div class="info-section">
+            <div class="info-box">
+                <i class="bx bx-check-circle icon"></i>
+                <h3>Estado de Préstamos</h3>
+                <p>No tienes préstamos pendientes.</p>
+            </div>
+
+            <div class="info-box">
+                <i class="bx bx-book icon"></i>
+                <h3>Últimos Materiales Disponibles</h3>
+                <p>Revisa los nuevos materiales en la biblioteca.</p>
+            </div>
+
+            <div class="info-box">
+                <i class="bx bx-tv icon"></i>
+                <h3>Equipo Audiovisual</h3>
+                <p>Consulta los equipos disponibles para préstamo.</p>
+            </div>
+
+            <div class="info-box">
+                <i class="bx bx-laptop icon"></i>
+                <h3>Equipos Tecnológicos</h3>
+                <p>Verifica la disponibilidad de laptops, tablets y más.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiales Disponibles - Préstamos UNPHU</title>
+    <!-- BOX ICONS -->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/style/styles_student.css">
+    <script src="/script/student.js" defer></script>
+</head>
+<body>
+    <div class="menu-dashboard">
+        <!-- TOP MENU -->
+        <div class="top-menu">
+            <div class="logo">
+                <img src="../img/logo.png" alt="UNPHU">
+                <span>UNPHU</span>
+            </div>
+            <div class="toggle"></div>
+        </div>
+        <!-- MENU -->
+        <div class="menu">
+            <div class="enlace" data-vista="inicio">
+                <i class="bx bx-home"></i>
+                    <span>Inicio</span>
+            </div>
+        
+            <div class="enlace" data-vista="solicitudes">
+                        <i class="bx bx-list-check"></i>
+                        <span>Estado de Solicitudes</span>
+            </div>
+        
+            <div class="enlace" data-vista="materiales">
+                        <i class="bx bx-folder"></i>
+                        <span>Gestion de Materiales</span>
+            </div>
+        
+            <div class="enlace cerrar-sesion">
+                <i class="bx bx-log-out"></i>
+                    <span>Cerrar Sesión</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="container mt-4">
+        <h2 class="text-center">📚 Gestión de Materiales</h2>
+        <!-- Barra de búsqueda -->
+        <div class="input-group mb-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Buscar material...">
+            <button class="btn btn-outline-secondary" type="button">
+                <i class="bx bx-search"></i>
+            </button>
+        </div>
+        <!-- Tabla de materiales -->
+        <table class="table table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Género</th>
+                    <th>Disponibilidad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="materialTable">
+                <tr>
+                    <td>Proyector HD</td>
+                    <td>Samsung</td>
+                    <td><span class="badge bg-info">Audiovisual</span></td>
+                    <td><span class="badge bg-success">Disponible</span></td>
+                    <td><button class="btn btn-primary btn-sm">📥 Solicitar</button></td>
+                </tr>
+                <tr>
+                    <td>iPad Pro</td>
+                    <td>Apple</td>
+                    <td><span class="badge bg-warning text-dark">Tecnología</span></td>
+                    <td><span class="badge bg-danger">Prestado</span></td>
+                    <td><button class="btn btn-secondary btn-sm" disabled>⛔ No disponible</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
